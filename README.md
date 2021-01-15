@@ -432,8 +432,8 @@ ________________________________________________________
 # Heroku
 
 - `docker-compose up -d --build`
-- `heroku create maisdigimonapp1`
-- `https://maisdigimonapp1.herokuapp.com/`
+- `heroku create:app digimon-api-app`
+- `https://digimon-api-app.herokuapp.com/`
 - in root create `heroku.yml`add:
 ```python
 build:
@@ -450,12 +450,12 @@ run:
 - `git init`
 - `git add .`
 - `git commit -am'herokuuuuu'`
-- `heroku git:remote -a maisdigimonapp1`
+- `heroku git:remote -a digimon-api-app`
 - `heroku stack:set container`
 - ` git push heroku master`
 - add Config Vars in heroku
-- edit this in .env file and herokyu`ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0,.maisdigimonapp1.com,maisdigimonapp1.herokuapp.com`
-- also in heroku `Config Vars` -->ADD `DJANGO_ALLOWED_HOSTS`= `.maisdigimonapp1.com,maisdigimonapp1.herokuapp.com`
+- edit this in .env file and herokyu`ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.-api-app.c-api-app.herokuapp.com`
+- also in heroku `Config Vars` -->ADD `DJANGO_ALLOWED_HOSTS`=-api-app.c-api-app.herokuapp.com`
 - `git add .`
 - `git commit -am'herokuuuuu'`
 - ` git push heroku master`
